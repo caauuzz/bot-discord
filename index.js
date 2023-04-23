@@ -35,7 +35,7 @@ client.login(TOKEN);
 client.on(Events.InteractionCreate, async interaction => {
   if (interaction.isStringSelectMenu()) {
     const selected = interaction.values[0];
-    
+
     switch (selected) {
       //#region League Of Legends - Builds
       case 'caitlyn':
@@ -67,6 +67,9 @@ client.on(Events.InteractionCreate, async interaction => {
         break;
       case 'zed':
         await interaction.reply("https://u.gg/lol/champions/zed/build")
+        break;
+      case 'yorick':
+        await interaction.reply("https://u.gg/lol/champions/yorick/build")
         break;
       //#endregion
       

@@ -56,6 +56,11 @@ const row = new ActionRowBuilder()
           description: 'Veja a build do Caitlyn',
           value: 'caitlyn'
         },
+        {
+          label: 'Yorick',
+          description: 'Veja a build do Yorick',
+          value: 'yorick'
+        },
       )
   )
 
