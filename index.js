@@ -35,47 +35,55 @@ client.login(TOKEN);
 client.on(Events.InteractionCreate, async interaction => {
   if (interaction.isStringSelectMenu()) {
     const selected = interaction.values[0];
-    if (selected == "javascript") {
-      await interaction.reply("Documentação do Javascript: https://developer.mozilla.org/en-US/docs/Web/JavaScript")
-    } else if (selected == "python") {
-      await interaction.reply("Documentação do Python: https://www.python.org/doc/")
-    }
-    else if (selected == "csharp") {
-      await interaction.reply("Documentação do C#: https://learn.microsoft.com/en-us/dotnet/csharp/")
-    }
-    else if (selected == "discordjs") {
-      await interaction.reply("Documentação do Discord.js: https://discordjs.guide/#before-you-begin")
-    } 
-    // Build
-    else if (selected == "kayn") {
-      await interaction.reply("https://u.gg/lol/champions/kayn/build")
-    }
-    else if (selected == "zed") {
-      await interaction.reply("https://u.gg/lol/champions/zed/build")
-    }
-    else if (selected == "yasuo") {
-      await interaction.reply("https://u.gg/lol/champions/yasuo/build")
-    }
-    else if (selected == "yone") {
-      await interaction.reply("https://u.gg/lol/champions/yone/build")
-    }
-    else if (selected == "gragas") {
-      await interaction.reply("https://www.mobafire.com/league-of-legends/champion/gragas-45")
-    }
-    else if (selected == "jayce") {
-      await interaction.reply("https://www.mobafire.com/league-of-legends/champion/jayce-100")
-    }
-    else if (selected == "hecarim") {
-      await interaction.reply("https://u.gg/lol/champions/hecarim/build")
-    }
-    else if (selected == "vex") {
-      await interaction.reply("https://u.gg/lol/champions/vex/build")
-    }
-    else if (selected == "elise") {
-      await interaction.reply("https://u.gg/lol/champions/elise/build")
-    }
-    else if (selected == "caitlyn") {
-      await interaction.reply("https://u.gg/lol/champions/caitlyn/build")
+    
+    switch (selected) {
+      //#region League Of Legends - Builds
+      case 'caitlyn':
+        await interaction.reply("https://u.gg/lol/champions/caitlyn/build")
+        break;
+      case 'elise':
+        await interaction.reply("https://u.gg/lol/champions/elise/build")
+        break;
+      case 'gragas':
+        await interaction.reply("https://u.gg/lol/champions/gragas/build")
+        break;
+      case 'hecarim':
+        await interaction.reply("https://u.gg/lol/champions/hecarim/build")
+        break;
+      case 'jayce':
+        await interaction.reply("https://u.gg/lol/champions/jayce/build")
+        break;
+      case 'kayn':
+        await interaction.reply("https://u.gg/lol/champions/kayn/build")
+        break;
+      case 'vex':
+        await interaction.reply("https://u.gg/lol/champions/vex/build")
+        break;
+      case 'yasuo':
+        await interaction.reply("https://u.gg/lol/champions/yasuo/build")
+        break;
+      case 'yone':
+        await interaction.reply("https://u.gg/lol/champions/yone/build")
+        break;
+      case 'zed':
+        await interaction.reply("https://u.gg/lol/champions/zed/build")
+        break;
+      //#endregion
+      
+      //#region Documentação das Linguagens
+      case 'javascript':
+        await interaction.reply("https://developer.mozilla.org/en-US/docs/Web/JavaScript")
+        break;
+      case 'python':
+        await interaction.reply("https://www.python.org/doc/")
+        break;
+      case 'csharp':
+        await interaction.reply("Documentação do C#: https://learn.microsoft.com/en-us/dotnet/csharp/")
+        break;
+      case 'discordjs':
+        await interaction.reply("https://discordjs.guide/#before-you-begin")
+        break;
+      //#endregion
     }
   }
   
