@@ -61,6 +61,21 @@ const row = new ActionRowBuilder()
           description: 'Veja a build do Yorick',
           value: 'yorick'
         },
+        {
+          label: 'Aurelion Sol',
+          description: 'Veja a build do Aurelion Sol',
+          value: 'aurelionsol'
+        },
+        {
+          label: 'Veigar',
+          description: 'Veja a build do Veigar (The Gamer)',
+          value: 'veigar'
+        },
+        {
+          label: 'Lissandra',
+          description: 'Veja a build do Lissandra',
+          value: 'lissandra'
+        },
       )
   )
 

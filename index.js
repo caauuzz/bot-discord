@@ -71,6 +71,15 @@ client.on(Events.InteractionCreate, async interaction => {
       case 'yorick':
         await interaction.reply("https://u.gg/lol/champions/yorick/build")
         break;
+      case 'aurelionsol':
+        await interaction.reply("U.GG: https://u.gg/lol/champions/aurelionsol/build\nMobafire: https://www.mobafire.com/league-of-legends/build/13-7-vicksys-reworked-master-asol-guide-529167")
+        break;
+      case 'veigar':
+        await interaction.reply("U.GG: https://u.gg/lol/champions/veigar/build\nMobafire: https://www.mobafire.com/league-of-legends/build/patch-13-8-my-veigars-build-all-matchups-607093")
+        break;
+      case 'lissandra':
+        await interaction.reply("U.GG: https://u.gg/lol/champions/lissandra/build\nMobafire: https://www.mobafire.com/league-of-legends/build/new-season-13-updated-13-8-the-midlane-ice-queen-of-death-603019")
+        break;
       //#endregion
       
       //#region Documentação das Linguagens
